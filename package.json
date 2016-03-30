@@ -1,0 +1,12 @@
+{
+  "name": "nb-angular-site",
+  "version": "0.0.1",
+  "devDependencies": {
+    "cookie": "^0.2.3",
+    "formidable": "^1.0.17",
+    "lodash": "^4.5.1",
+    "lrucache": "^1.0.0",
+    "nb-json-db": "^0.1.0",
+    "node-static": "^0.7.7"
+  }
+}

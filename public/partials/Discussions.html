@@ -1,0 +1,64 @@
+<div id="layout" class="discussion-container pure-u-1">
+    <h2>Discussions Page</h2>
+    <div>
+        <div class="add-discussion-section pure-u-1 pure-u-md-1-4">
+            <textarea ng-model="NewMessage.Text"/>
+            <!--<div> <span>{{NewMessage.Rating ? NewMessage.Rating: '0' }} out of-->
+                                    <!--{{maxRating}}-->
+                                <!--<div star-rating rating-value="NewMessage.Rating" max="maxRating"-->
+                                     <!--on-rating-selected="changeRating(NewMessage)"></div>-->
+                                <!--</span>-->
+            <!--</div>-->
+            <input value=" Submit " type="button" ng-click="addDiscussion(NewMessage)"/>
+        </div>
+        <div class="discussion-list pure-u-1 pure-u-md-1">
+            <ul>
+                <li ng-repeat="message in Messages" class="discussion-item" ng-if="message.ParentId == 0">
+                    <div class="discussion-body">
+                        <a href="" ng-click="openComments(message)">{{message.Text}}</a>
+                    </div>
+                    <div style="text-align: right;">
+                        <span>--- {{message.AddedBy}}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Comments</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <ul ng-repeat="comment in Comments">
+                        <li>{{comment.Text}}</li>
+                        <div> <span>{{comment.Rating ? comment.Rating: '3' }} out of
+                                    {{maxRating}}
+                                <div star-rating rating-value="comment.Rating" max="maxRating"
+                                     on-rating-selected="getSelectedRating(comment)"></div>
+                                </span>
+                        </div>
+                    </ul>
+                </div>
+                  <p>Enter the Comments</p>
+                <div class="comment-section">
+                    <input type="hidden" ng-model="newComment.ParentId" />
+                    <textarea name="comments" type="text" ng-model="newComment.Text" placeholder="Enter the comment"/>
+                    <div> <span>{{newComment.Rating ? newComment.Rating: '3' }} out of
+                                    {{maxRating}}
+                                <div star-rating rating-value="newComment.Rating" max="maxRating"
+                                     on-rating-selected="changeRating(newComment)"></div>
+                                </span>
+                    </div>
+                    <button ng-click="addComment(newComment)">Add the comment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

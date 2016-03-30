@@ -1,0 +1,49 @@
+
+.admin-container .projects-container{
+		  background-color: #262255;
+    border-radius: 75px;
+    float: left;
+    height: auto;
+    left: 1%;
+    position: absolute;
+    width: 25%;
+    color:white;
+}
+
+.admin-container .practise-container{
+	  background-color: #262255;
+    border-radius: 75px;
+    float: right;
+    position: absolute;
+    right: 46%;
+    top: 48%;
+    width: 28%;
+    color:white;
+}
+
+.practise-section{
+ margin-left: 30px;
+}
+
+
+.projects-section{
+ margin-left: 30px;
+}
+
+.employee-container{
+  background-color: #262255;
+    border-radius: 70px;
+    left: 55%;
+    position: relative;
+    width: 40%;
+    color:white;
+}
+.employee-section{
+	margin-left:40px;
+}
+.employee-section div{
+	padding:5px;
+}
+.projects-section,.employee-section,.practise-section input{
+	color:black;
+}

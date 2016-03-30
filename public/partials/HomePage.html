@@ -1,0 +1,107 @@
+<div class="homepage-container">
+	<!--Banner section-->
+	<div class="splash-container">
+		<div class="splash">
+			<div id="slider">        	 
+				<figure>
+					<a href=""><img src="images/announcements3.png" alt=""></a>
+					<a href=""><img src="images/news.jpg" alt=""></a>
+					<a href=""><img src="images/events.jpg" alt=""></a>
+					<a href=""><img src="images/birthdays.png" alt=""> </a>
+				</figure>  
+				<p>Recent Activities</p>
+			</div> 
+		</div>
+	</div>
+<!--News Section -->
+	<div class="content-wrapper">
+		<div class="home-content">
+			<h2 class="content-head is-center">Details about Techaspect</h2>
+
+			<div class="pure-g">
+				<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<h3 class="content-subhead">
+						<i class="fa fa-rocket"></i>
+						Our Mission
+					</h3>
+					<p>
+						To deliver innovative digital solutions with a focus on providing good return on investment for our customers and to dedicate our talent to the success of our clients.
+					</p>
+				</div>
+				<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<h3 class="content-subhead">
+						<i class="fa fa-mobile"></i>
+						Our Vision
+					</h3>
+					<p>
+						To become the world's leading provider of innovative digital solutions and services. 
+					</p>
+				</div>
+				<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<h3 class="content-subhead">
+						<i class="fa fa-th-large"></i>
+							Our Goal
+						</h3>
+					<p>
+						Our expertise lies in the implementation of web content management solutions, and integrations with enterprise search, social media, analytics, marketing automation, CRM, ERP and commerce platforms. 
+					</p>
+				</div>
+				<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+					<h3 class="content-subhead">
+						<i class="fa fa-check-square-o"></i>
+						Quality Policy
+					</h3>
+					<p>
+						To deliver high-quality, timely and cost-effective digital solutions and ensure customer satisfaction by continuous process improvement.
+					</p>
+				</div>
+			</div>	
+		</div>		
+
+		<div class="ribbon l-box-lrg pure-g">
+			<div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+				<img class="pure-img-responsive" alt="File Icons" width="300" src="images/referral.jpg">
+			</div>
+			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+				<h2 class="content-head-ribbon">Employee Referrals@Techaspect</h2>
+				<p>Dear TechAspectians,</p>
+				<p>
+					Employees of TechAspect are welcome to give their references for the below mentioned positions for its offshore development center.
+				</p>
+				<p>For List of Current Openings <a href="#" target="_blank">Click Here</a> </p>
+				<p>You can also introduce your pals and get benefitted from the Employee Referral Program.</p>
+				<p>Policy on Employee Referral Program is available <a href="#" target="_blank">Here</a> </p>
+			</div>
+		</div>
+
+		<div class="home-content">
+			<h2 class="content-head is-center">Techaspect in social sites</h2>
+			<div class="pure-g">
+				<div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+					Yammer feeds
+
+   				 <div id="embedded-feed" style="height:350px"></div> 
+   
+				</div>
+
+				<div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+					<h4>New Employees</h4>
+					  <ul class="employee-list"> 
+					  		   <li ng-repeat="empDetails in Employee | orderBy:'-JoinedDate'">  <b>FirstName:</b>{{empDetails.FName}} <span><b>LastName:</b> {{empDetails.LName}}</span>
+                          		 <b>Joining Date:</b> {{empDetails.JoinedDate | date}}</li>  
+                      </ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer l-box is-center">
+			Copyright © 2016 , all rights reserved.
+		</div>
+	</div> 
+</div>
+
+  <script> 
+         yam.connect.embedFeed( 
+           { container: '#embedded-feed',
+             network: 'techaspect.com'  // network permalink (see below) 
+         }); 
+     </script>

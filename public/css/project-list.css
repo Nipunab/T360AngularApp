@@ -1,0 +1,54 @@
+
+ .project-details,.practise-details,.training-details {
+    width: 80%;
+    margin-left:18%;
+    margin-top:35px;
+ }
+
+ .project-list-container,.practise-list-container,.training-list-container h3{
+        margin:0px;
+    }
+   .project-list-container .banner-section,.aboutus-section{
+        width:100%;height:auto;
+    }
+   
+   .project-list-container .team-details,.tech-details{
+        width:100%;height:auto;clear:both;
+    }
+    
+    .info-section{
+        width:100%;height:auto;  font-style: oblique;clear: both;margin-bottom: 5%;
+    }
+    .team-mates{
+        width:200px;height:200px;background-color:#5c9a1b;float:left;margin:50px;border-radius:100px;
+    }
+    .team-mates img{
+        border-radius: 100px;
+       height: 200px;
+        width: 200px;
+     }
+    .tech-content{
+        width:160px;height:160px;background-color:#98FB98;float:left;margin:50px;
+    }
+    .tech-content img{
+         height: 160px;
+        width: 160px;
+    }
+
+  
+    .practise-list-container .announcement-section, .task-section,.calendar-details{
+        width:100%;height:auto;
+    }
+  
+    .link-section{
+        width:100%;height:auto;  font-style: oblique;
+    }
+
+       
+ @media (max-width: 48em) {
+         .project-details,.practise-details,.training-details {
+            width: 80%;
+            margin-left:10%;
+            margin-top:35px;
+        }
+    }
