@@ -4,13 +4,21 @@
     </div>
     <input type="file" file-model="myFile" file-on-change="uploadFiles" style="margin-top:150px;"/>
     <!--  <button ng-click="saveFiles()">upload me</button> -->
-    <div>
+    <div class="document-section">
         <ul>
             <li ng-repeat="doc in Documents" ng-if="doc.Category == pageType">
                 {{ doc.Name }}
                 <a href="" ng-click="deleteDocument(doc)">Delete</a>
                  <a href="" ng-click="downloadDocument(doc)">Download</a>
             </li>
-        </ul>
+        </ul>  
+
+        <!-- <table style="width:100%">
+          <tr ng-repeat="doc in Documents" ng-if="doc.Category == pageType">
+            <td>{{ doc.Name }}
+            <a href="" ng-click="deleteDocument(doc)">Delete</a> 
+            <a href="" ng-click="downloadDocument(doc)">Download</a> </td>
+          </tr>
+        </table> -->
     </div>
 </div>

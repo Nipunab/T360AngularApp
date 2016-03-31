@@ -17,7 +17,7 @@ module.exports = {
 
 
         }).listen(fePort, function () {
-            console.log((new Date()) + ' Server is listening on port 3434');
+            console.log((new Date()) + ' Server is listening on port ' + fePort);
         });
     }
 };

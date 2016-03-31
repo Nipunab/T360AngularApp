@@ -1,51 +1,23 @@
 # AngularSite
-Designing a site using Angular
 
-npm install
+Introduction:
+Designing a site which includes details of an employee.
 
-node db-server.js
+SetUp:
+Technologies used: AngularJS,NodeJS
 
-node fe-server.js
+ DB installed from NPM server:  
+
+ https://www.npmjs.com/package/nb-json-db
 
 
-Adding code to GITHUB:
 
-E:
-set path=C:\Users\nipunab\AppData\Local\Programs\Git\bin
-git -v
-git clone https://github.com/Nipunab/AngularSite
+Start Sever: node server.js
 
-Running page on server:
+Database: we are using nb-json-db for storing db which provide simple and readable db
 
-cd AngularSite
 
-setup
+CSS framework: http://purecss.io
+Pure was crafted with the goal that it can be used in every web project.These layouts are responsive and don't require JavaScript (except for certain menu interactions).
 
-node fe-server.js
-
-To checkin/commit files:
-
-get latest from GITHUB: git pull origin master
-
-Check the status of added or modified files: git status 
-
-Add all the files to commit to GIT: git add .
-
-Commit the files to GIT: git commit -m "comment for commit"
-
-Push the code to GIT: git push origin master
-username:nipunab
-pwd:github#4
- 
- DB installed from NPM server:
-
- npm i nb-json-db
-
-https://www.npmjs.com/package/nb-json-db
-
-Running DB server:
-
-E:
-cd AngularSite
-node db-server.js
-
+ AngularJS:

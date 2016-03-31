@@ -1,10 +1,10 @@
 <div class="pure-u-1 admin-container">
-            <h3>Admin Page</h3>
+            <h2 style="text-align:center;">Admin Page</h2>
         <div class="projects-container">
             <h4 style="text-align:center;">Projects</h4>
             <div ng-if="IsProjectsLoading"> Loading....</div>
             <div ng-if="IsProjectsLoading == false" class="projects-section">
-                <div>
+                <div class="project-form">
                     <input type="text" placeholder="Project Name" ng-model="NewProject.Name"/>
                     <input type="button" value=" Add Project " ng-click="addItem('PROJECT', NewProject)"/>
                 </div>
@@ -20,7 +20,7 @@
         <h4 style="text-align:center;">Practises</h4>
         <div ng-if="IsPractiseLoading"> Loading....</div>
         <div ng-if="IsPractiseLoading == false" class="practise-section">
-            <div>
+            <div class="practise-form">
                 <input type="text" placeholder="Practise Name" ng-model="NewPractise.PName"/>
                <!--  <input type="text" placeholder="Practise Lead" ng-model="NewPractise.Lead"/> -->
                 <input type="button" value=" Add Practise " ng-click="addItem('PRACTISE', NewPractise)" />

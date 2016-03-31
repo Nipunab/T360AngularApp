@@ -47,7 +47,7 @@ The content `<div>` is where all your content goes.
 }
 
 .header {
-     margin: 20px 0 0 0;
+     margin: 40px 0 0 0;
      color: #333;
      text-align: center;
      padding: 2.5em 2em 0;
@@ -220,7 +220,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
     #menu {
         left: 200px;
-        margin-top:75px;
+        margin-top:120px;
     }
     .menu-link {
         position: fixed;
@@ -245,7 +245,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
     #menu{ 
         position: relative;
-        top: 45px;  
+        top: 28px;  
         background: #191818;
     }
 }

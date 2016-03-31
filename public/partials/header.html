@@ -1,17 +1,24 @@
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="#home">Tech360</a>
-        <div class="" ng-if="IsAuthenticated" style="color:white;">Welcome
-            <a ng-if="IsAdmin" href="#admin" class="">{{UserInfo.FName}}</a>
-            <span ng-if="!IsAdmin">{{UserInfo.FName}}</span>
+       <div>
+            <div>
+                <a class="pure-menu-heading" ng-if="!IsAuthenticated" href=""> Tech360</a> 
+                <span ng-if="IsAuthenticated"><a href="#home" class="pure-menu-heading">Tech360</a>
+                </span>
+            </div>
+            <div class="welcome-note" ng-if="IsAuthenticated"><span>Welcome!</span>
+                <a ng-if="IsAdmin" href="#admin">{{UserInfo.FName}}</a>
+                <span ng-if="!IsAdmin">{{UserInfo.FName}}</span>
+            </div>
         </div> 
         <!-- <a href="#" >LogOut</a> -->
+        <div class="header-section">
         <ul class="pure-menu-list header-list" ng-if="IsAuthenticated">
             <li class="pure-menu-item"><a href="#projects" class="pure-menu-link">Projects</a></li>
             <li class="pure-menu-item"><a href="#coe" class="pure-menu-link">COE</a></li>
             <li class="pure-menu-item"><a href="#discussions" class="pure-menu-link">Discussions</a></li>
-            <li class="pure-menu-item logout"><a href="#" ng-click="logout()" class="pure-menu-link">Logout</a></li>
-          <!--   <li class="pure-menu-item" ng-if="IsAdmin"><a href="#admin" class="pure-menu-link">Admin</a></li> -->
+            <li class="pure-menu-item logout"><a href="#" ng-click="logout()" class="pure-menu-link">Logout</a></li> 
         </ul>
+        </div>
     </div>
 </div>

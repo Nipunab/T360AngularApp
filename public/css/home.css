@@ -284,6 +284,7 @@ a.pure-button-primary {
     }
 .discussion-list{    
     position: absolute;
+    top:90px;
 }
  .discussion-list ul{
       left: 35%;
@@ -315,11 +316,12 @@ a.pure-button-primary {
 
 .discussion-container{
     position:relative;
+    top:45px;
 }
  .add-discussion-section{
         bottom: 0;
         padding: 30px; 
-        top: 70px;
+        top: 120px;
         background: #585858; 
     }
     .add-discussion-section textarea{
@@ -331,14 +333,28 @@ a.pure-button-primary {
         padding:10px;
     }
 
- 
+ .add-discussion-section span{
+    color:white;
+ }
  .document-container{
     left: 25%; 
     position: relative;
  }
+.document-section li{
+    padding:5px;
+}
+.document-section li a{
+    padding:10px;
+}
 
  .header-list{
     float:right;
+ }
+ .header-section{
+    float: left;width: 100%;
+ }
+ .welcome-note{
+    color:white; float: right;
  }
  .comment-section input{
     margin-bottom:15px;
@@ -348,15 +364,11 @@ a.pure-button-primary {
     left: 0;
     margin-top: 0; 
  }
- .header-list .logout{
-    display:inline;float:left;
- }
+ 
  .admin-container{
     margin-top: :25%;
  }
- .discussion-container{
-    margin-top:75px;
- }
+ 
  .discussion-container h2{
     margin-left:0px;
  }

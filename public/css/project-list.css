@@ -1,11 +1,11 @@
 
- .project-details,.practise-details,.training-details {
+ .project-details,.practise-details {
     width: 80%;
     margin-left:18%;
     margin-top:35px;
  }
 
- .project-list-container,.practise-list-container,.training-list-container h3{
+ .project-list-container,.practise-list-container h3{
         margin:0px;
     }
    .project-list-container .banner-section,.aboutus-section{
@@ -46,7 +46,7 @@
 
        
  @media (max-width: 48em) {
-         .project-details,.practise-details,.training-details {
+         .project-details,.practise-details {
             width: 80%;
             margin-left:10%;
             margin-top:35px;
