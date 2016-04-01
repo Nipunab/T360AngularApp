@@ -1,7 +1,18 @@
 # AngularSite
 
 ### Introduction
-Application for basic management employeee and projects and practises.
+Developed an AngularJS application for basic management of employeees,projects and practises.
+
+The Application includes:
+ Login Page: Where only authenticated users can login who are registered by the ADMIN.
+
+ Home Page: It includes details about company and list of employees that are registered,Yammer feeds, etc..
+
+ Projects Page: It includes list of projects added by the ADMIN and document section for uploading and downloading the files and a static Blog section.
+
+COE Page: It includes list of practises added by the ADMIN and document section for uploading and downloading the files and a static Blog section.
+
+Discussion Page: It includes a chatting application where users can post their questions and anyone can answer the queries and give rating to the questions.
 
 
 ### Setup
@@ -43,3 +54,6 @@ the only concern is speed.(intentionally avoid all the layers of security to bri
 
 ### CSS framework: http://purecss.io
 Pure was crafted with the goal that it can be used in every web project.These layouts are responsive and don't require JavaScript (except for certain menu interactions).
+
+### Technologies used: AngularJS,NODEJS,PureCSS framework
+
