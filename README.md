@@ -40,8 +40,5 @@ coming to security concerns, We are using hybrid security for authentication we 
 
 The only concern is speed.(intentionally avoid all the layers of security to bring up maximum speed to load JSON data.)
 
-### CSS framework
-
-http://purecss.io
-
+####CSS framework: http://purecss.io
 Pure was crafted with the goal that it can be used in every web project.These layouts are responsive and don't require JavaScript (except for certain menu interactions).
